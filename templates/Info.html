@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Diabetic Retinopathy Detection</title>
+	<meta charset="utf-8">
+	<!--<link rel="icon" type="image/png" sizes="32x32" href="images/logos/favicon.ico">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="static/css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="static/css/animate.css">
+
+	<link rel="stylesheet" href="static/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="static/css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="static/css/magnific-popup.css">
+
+	<link rel="stylesheet" href="static/css/aos.css">
+
+	<link rel="stylesheet" href="static/css/ionicons.min.css">
+
+	<link rel="stylesheet" href="static/css/bootstrap-datepicker.css">
+	<link rel="stylesheet" href="static/css/jquery.timepicker.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="static/css/main2.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="static/css/flaticon.css">
+	<link rel="stylesheet" href="static/css/icomoon.css">
+	<link rel="stylesheet" href="static/css/style.css">
+	<link rel="icon" href="images/hmslogo.ico" type="image/vnd.microsoft.icon">
+
+	<style>
+		hr {
+			
+            height: 1px;
+            background-color: black;
+            width: 80%;
+		}
+		html{
+		scroll-behavior:smooth;
+		}
+		#button {
+			background-color: #1c87c9;
+			border: none;
+			color: white;
+			padding: 20px 34px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 20px;
+			margin: 4px 2px;
+			cursor: pointer;
+        }
+        div.gallery {
+        margin: 35px;
+        align-items: center;
+        border: 0px solid #ccc;
+        float: left;
+        width: 175px;
+		height:175px;
+        }
+
+    div.gallery:hover {
+    border: 1px solid #777;
+    }
+
+    div.gallery img {
+    width: 100%;
+    height: auto;
+    }
+
+div.hell {
+	
+        margin: 3px;
+        align-items: center;
+        border: 0px solid #ccc;
+        float:left;
+        width: 230px;
+	height:230px;
+        }
+
+    div.hell:hover {
+    border: 1px solid #777;
+    }
+
+    div.hell img {
+    width: 100%;
+    height: auto;
+    }
+
+
+
+div.he {
+	
+        margin: 3px;
+        align-items: center;
+        border: 0px solid #ccc;
+        float:left;
+        width: 230px;
+	height:230px;
+        }
+
+    div.he:hover {
+    border: 1px solid #777;
+    }
+
+    div.he img {
+    width: 100%;
+    height: auto;
+    }
+
+    div.desc {
+    padding: 15px;
+    text-align: center;
+    }
+
+
+
+div.hel {
+        margin: 5px;
+        align-items: center;
+        border: 0px solid #ccc;
+        float: center;
+        width: 400px;
+	height:400px;
+        }
+
+    div.hel:hover {
+    border: 1px solid #777;
+    }
+
+    div.hel img {
+    width: 100%;
+    height: auto;
+    }
+
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 100px;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+padding:5px;
+}
+
+    div.desc {
+    padding: 5px;
+    text-align: center;
+    }
+</style>
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+		<div class="container">
+			
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+
+
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active"><a href="/" class="nav-link"
+                       		style="text-transform: capitalize; ,align:left;">Back</a></li>
+					<li class="nav-item active"><a href="#" class="nav-link"
+                       		style="text-transform: capitalize; ,align:left;"></a></li>
+					<li class="nav-item active"><a href="#" class="nav-link"
+                       		style="text-transform: capitalize; ,align:left;"></a></li>
+					<li class="nav-item active"><a href="#" class="nav-link"
+                       		style="text-transform: capitalize; ,align:left;"></a></li>
+					<li class="nav-item active"><a href="#" class="nav-link"
+                       		style="text-transform: capitalize; ,align:left;"></a></li>
+					<li class="nav-item active"><a href="#" class="nav-link"
+                       		style="text-transform: capitalize; ,align:left;"></a></li>
+					<li class="nav-item active"><a href="#" class="nav-link"
+                       		style="text-transform: capitalize; ,align:left;"></a></li>
+					<li class="nav-item active"><a href="#" class="nav-link"
+                       		style="text-transform: capitalize; ,align:left;"></a></li>
+					<li class="nav-item active"><a href="#" class="nav-link"
+                       		style="text-transform: capitalize; ,align:left;"></a></li>					<li class="nav-item active"><a href="#" class="nav-link"
+                       		style="text-transform: capitalize; ,align:left;"></a></li>
+		
+					<li class="nav-item active"><a href="/Info" class="nav-link"
+                            style="text-transform: capitalize;">Home</a></li>
+                    <li class="nav-item active"><a href="#about" class="nav-link" style="text-transform: capitalize;">About</a></li>        
+					<li class="nav-item active"><a href="Info#working" class="nav-link"
+							style="text-transform: capitalize;">Methodology</a></li>
+					<li class="nav-item active"><a href="Info#sample" class="nav-link"
+							style="text-transform: capitalize;">Sample Images</a></li>
+					<li class="nav-item active"><a href="Info#predict" class="nav-link"
+							style="text-transform: capitalize;">Result</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- END nav -->
+    <br> <br>
+
+		<div class="container-fluid px-0" id="home" style="margin-top: 0px; margin-bottom: 0px;">
+			<div class="row d-md-flex no-gutters slider-text align-items-center js-fullheight justify-content-end">
+		
+				<div style="padding-left:10%; padding-right: 10%;">
+					<div class="text mt-5">
+						<span class="subheading" style="color:orange;font-family:Comic Sans MS; font-size: 26px;">Diabetic Retinopathy</span>
+						<h3 style="color: black;font-family:Arial ;font-size:medium;">Diabetic retinopathy is a diabetes complication that affects eyes. It's caused by damage to the blood vessels of the light-sensitive tissue at the back of the eye (retina). At first, diabetic retinopathy may cause no symptoms or only mild vision problems. Eventually, it can cause blindness. The condition can develop in anyone who has type 1 or type 2 diabetes. The longer you have diabetes and the less controlled your blood sugar is, the more likely you are to develop this eye complication. Primarily, there are three types of Diabetic Retinopathy- No DR, Non-Proliferative DR and Proliferative DR. Of an estimated 285 million people with diabetes mellitus worldwide, approximately one third have signs of DR.Early diagnosis is very important in the treatment of Diabetic Retinopathy. If the DR is detected at an early stage, it leads to a very high chance of complete and full recovery.
+
+							</h3> 
+					</div>
+				</div>
+			</div>
+		</div>
+        <center>
+        <img src="static/images/ActivityDiagram1.jpg" width="80%" height="50%" style="border: 10px; align-content: center ;" > 
+        </center>
+
+    <br> <br>  
+
+    <hr >
+    
+
+    <!-- about us --> 
+	
+                <div class=" text-center heading-section" id="about" style="margin-top: 5%; margin-left: 5%;">
+					<h2 class="mb-4">About The Project</h2>
+                    <p style="text-align: justify ;font-size: large; color: black; margin-right: 10%; margin-left: 10%;">Diabetic retinopathy is caused by prolonged high blood glucose levels Over time, high sugar glucose levels can weaken and damage the small blood vessels within the retina. This may cause haemorrhages, exudates and even swelling of the retina. This then starves the retina of oxygen, and abnormal vessels may grow.
+                         Although Globally, the number of people with DR will grow from 126.6 million in 2010 to 191.0 million by 2030, a fast diagnosis can lead to a very high chance of full recovery. 
+                          Current methods of detection and assessment of diabetic retinopathy is manual, expensive and require trained ophthalmologists. A computer-based automated classification of diabetic retinopathy using  fundus images is a challenging task due to the varied standard of stages in DR. 
+                         <br><br>Over the last few years, convolutional neural networks (CNN) have been increasingly employed for the task of automatic and semi-automatic image classification. Through this work, we aim to use a transfer learning-based deep learning approach to detect Diabetic Retinopathy in dermatological images. The process would involve pre-processing and data augmentation tasks being performed on the fundus images. Following this, a pre-trained transfer learning model would be fine-tuned and used for feature-selection and a classifier model would be added on top of it to classify the images of skin lesions into various categories of DR. Our results show that a transfer learning approach can work as an effective screening tool in detecting Diabetic Retinoathy.  
+
+					</p>
+                </div>
+
+                <br><br>
+
+     <hr>
+    <br> <br>
+
+    
+
+    <!-- about us --> 
+	
+				<div class=" text-center heading-section" id="working">
+					<h2 class="mb-4">Working of the Classifier</h2>
+					<p style="text-align: justify ;font-size: large; color: black; margin-right: 10%; margin-left: 10%;">The proposed methodology makes use of the technique of transfer learning to build a classifier that could distinguish between malignant and benign categories of skin lesion images.
+                    <ol type="a)" style="color: black;" >
+                        <li style="color: black; text-align: justify; margin-left: 10%; margin-right: 10%; margin-top: 2%;">	<b><u>Pre-processing:</b></u> <br>
+                        
+                        Preprocessing techniques have always played a vital role in detecting Diabeting Retinopathy detection. We have been able to successfully apply various pre-processing techniques like Gaussian Blur, Removal of Padding and Auto-Cropping. 
+                        </li>
+                        <li style="color: black;text-align: justify;margin-left: 10%; margin-right: 10%; margin-top: 2%;">	<b><u>Data Augmentation:</b></u> <br>
+                        
+                        In order to overcome the unavailability of a larger dataset, we have used data augmentation techniques like rotation, horizontal flipping, vertical flipping and zooming to enhance the data while training the model. It has been shown that data augmentation has the ability to increase the performance of deep learning models where a large dataset is not available. 
+                        
+                        
+                        <li style="color: black;  text-align: justify;margin-left: 10%; margin-right: 10%; margin-top: 2%;"><b><u>Architecture: </b></u><br>
+                        
+                        One of the biggest issues, that affects the performance of a deep learning model is the unavailability of a large training dataset. In order to overcome this problem, the relatively novel technique of transfer learning can be employed. 
+                        
+                        The process of transfer learning involves training a base network on a much larger base dataset and task. The features learnt by the base network are then leveraged for the target network which trains on the target dataset for the target task.
+                        
+                        In our proposed methodology, we have made use of a ResNet50 model that has been trained previously on the ImageNet dataset as the base model. This is used as a feature extractor for our model.  In order to fine-tune the ResNet50 network, the fully connected topmost layers were removed. These were replaced by  global max-pooling layers, fully connected dense layer,dropout layer for regularization and a softmax activation layer.
+                        </li>
+                    </ol>
+
+					</p>
+                </div>
+
+                <br> <br>
+                <hr>
+                
+                <center>    <h2>Some Sample Images from the Dataset</h2>  </center>
+
+                <div  id="sample" style="margin-top: 0%; margin-left: 20%; margin-right: 20%; text-align: center;">
+                    <br>
+					
+                    <div class="gallery">
+                        <a target="_blank" href="0abf0c485f66.png">
+                          <img src="static/images/0abf0c485f66.png" alt="No DR" width="600" height="400">
+                        </a>
+                        <div class="desc">NoDR</div>
+                    </div>
+                      
+                    <div class="gallery">
+                        <a target="_blank" href="2cf18033da31.png">
+                          <img src="static/images/2cf18033da31.png" alt="No DR" width="600" height="400">
+                        </a>
+                        <div class="desc">No DR</div>
+                    </div>
+                      
+                    <div class="gallery">
+                        <a target="_blank" href="3ac92ac3d65a.png">
+                          <img src="static/images/3ac92ac3d65a.png" alt="No DR" width="600" height="400">
+                        </a>
+                        <div class="desc">No DR</div>
+                    </div>
+                      
+                    <div class="gallery">
+                        <a target="_blank" href="4c389d033cb0.png" >
+                          <img src="static/images/4c389d033cb0.png" alt="No DR" width="600" height="400">
+                        </a>
+                        <div class="desc">No DR</div>
+                    </div>
+					</div>
+
+
+
+
+
+                <div style="margin-top: 0%; margin-left: 20%; margin-right: 20%; text-align: center;">
+                    
+                    <div class="gallery" style="margin-top: 10%;">
+                          <a target="_blank" href="bfefa7344e7d.png">
+                            <img src="static/images/bfefa7344e7d.png" alt="NPDR" width="350" height="350" >
+                          </a>
+                          <div class="desc">NPDR</div>
+                    </div>
+                        
+                    <div class="gallery" style="margin-top: 10%;">
+                          <a target="_blank" href="cd93a472e5cd.png">
+                            <img src="static/images/cd93a472e5cd.png" alt="NPDR" width="150" height="150" >
+                          </a>
+                          <div class="desc">NPDR</div>
+                    </div>
+                        
+                    <div class="gallery" style="margin-top: 10%;">
+                          <a target="_blank" href="d0b132d2c7ec.png">
+                            <img src="static/images/d0b132d2c7ec.png" alt="NPDR" width="150" height="150">
+                          </a>
+                          <div class="desc">NPDR</div>
+                    </div>
+                        
+                    <div class="gallery" style="margin-top: 10%;">
+                          <a target="_blank" href="d035c2bd9104.png">
+                            <img src="static/images/d035c2bd9104.png" alt="NPDR" width="150" height="150">
+                          </a>
+                          <div class="desc">NPDR</div>
+                    </div>
+				</div>
+
+
+
+                <div style="margin-top: 0%; margin-left: 20%; margin-right: 20%; text-align: center;">
+                      <br> <br> <br> <br>
+                    <div class="gallery" style="margin-top: 10%;">
+                          <a target="_blank" href="0e0fc1d9810c.png">
+                            <img src="static/images/0e0fc1d9810c.png" alt="PDR" width="150" height="150">
+                          </a>
+                          <div class="desc">PDR</div>
+                    </div>
+                        
+                    <div class="gallery" style="margin-top: 10%;">
+                          <a target="_blank" href="5b76117c4bcb.png">
+                            <img src="static/images/5b76117c4bcb.png" alt="PDR" width="150" height="150">
+                          </a>
+                          <div class="desc">PDR</div>
+                    </div>
+                        
+                    <div class="gallery" style="margin-top: 10%;">
+                          <a target="_blank" href="ebe0175e530c.png">
+                            <img src="static/images/ebe0175e530c.png" alt="PDR" width="150" height="150">
+                          </a>
+                          <div class="desc">PDR</div>
+                    </div>
+                        
+                    <div class="gallery" style="margin-top: 10%;">
+                          <a target="_blank" href="838c87c63422.png">
+                            <img src="static/images/838c87c63422.png" alt="PDR" width="150" height="150">
+                          </a>
+                          <div class="desc">PDR</div>
+                    </div>
+
+
+
+                    <div style="clear: left;"></div>
+                    </div>
+                </div>
+            </center>
+
+                <br><br>
+
+
+
+            <hr>
+            <br><br>
+
+    <div class=" text-center heading-section" id="predict">
+                    <h2 class="mb-4">Result</h2>
+
+            
+                    
+   
+ <center>
+			 <div class="hel">
+                        <a target="_blank" href="comparison_resnet_vs_CNN.png">
+                          <img src="static/images/comparison_resnet_vs_CNN.png" alt="ResNet50 VS CNN" width="150" height="150">
+                        </a>
+                        <div class="desc">ResNet50 VS CNN</div>
+                    </div>                  
+</center>
+
+<center>
+			<div  style="margin-top: 0%; margin-left: 20%; margin-right: 20%; text-align: center;">
+					<div class="he">
+                        <a target="_blank" href="resnet_accuracy.png">
+                          <img src="static/images/resnet_accuracy.png" alt="ResNet50 Accuracy" width="250" height="900">
+                        </a>
+                        <div class="desc">ResNet50 Accuracy</div>
+                    </div>
+                      
+                    <div class="hell">
+                        <a target="_blank" href="resnet_loss.png">
+                          <img src="static/images/resnet_loss.png" alt="ResNet50 Loss" width="250" height="250">
+                        </a>
+                        <div class="desc">ResNet50 Loss</div>
+                    </div>
+                      
+                    <div class="hell" >
+                        <a target="_blank" href="acc.png">
+                          <img src="static/images/acc.png" alt="No DR" width="150" height="900">
+                        </a>
+                        <div class="desc">CNN Accuracy</div>
+                    </div>
+                      
+                    <div class="hell">
+                        <a target="_blank" href="Loss.png" >
+                          <img src="static/images/Loss.png" alt="CNN Loss" width="250" height="250">
+                        </a>
+                        <div class="desc">CNN Loss</div>
+                    </div>
+            </div>     
+     
+     </center>
+                 
+             
+
+
+
+                    <div style="clear: left;"></div>
+                    </div>
+                </div>
+            </center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <br><br>
+        </center>
+        
+        </div></div>
+    </div>
+    
+    <footer>
+        <script src="js/main.js" type="text/javascript"></script>    
+    </footer>     
+
+</body>
+</html>
+
+		
+
+
+

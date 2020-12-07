@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Results</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="../static/css/main.css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	</head>
+	<style>
+	footer{
+		margin: 10;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+		padding: 6em 0;
+		background: #6cc091;
+		color: red;
+		text-align: center;
+	}
+	</style>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="/res" class="logo">About us</a>
+					<nav id="nav">
+						<a href="/">Home</a>
+						<a href="/chest">Chest</a>
+						<a href="/brain">Brain</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+
+<img style="margin-left: 400px;
+		vertical-align: baseline;
+		border-radius: 8px;
+		border: 1px solid #ddd;
+		padding: 0px;
+		width: 256px;
+		height: 256px;"
+		src="{'uploader/2.png' }"width="256" height="256"><br/>
+
+<div>
+{% if name == 'No DR' %}
+<h2><p>
+No DR is the collapse or closure of a lung resulting in reduced or absent gas exchange. It may affect part or all of a lung. It is usually unilateral. It is a condition where the alveoli are deflated down to little or no volume, as distinct from pulmonary consolidation, in which they are filled with liquid. It is often called a collapsed lung
+</p>
+<p>
+It is a very common finding in chest x-rays and other radiological studies, and may be caused by normal exhalation or by various medical conditions. Although frequently described as a collapse of lung tissue, atelectasis is not synonymous with a pneumothorax, which is a more specific condition that features atelectasis. Acute atelectasis may occur as a post-operative complication or as a result of surfactant deficiency. In premature babies, this leads to infant respiratory distress syndrome. 
+</p>
+</h2>
+{% endif %}
+
+{% if name == 'Non-Proliferative DR' %}
+<h2><p>
+No DR is the collapse or closure of a lung resulting in reduced or absent gas exchange. It may affect part or all of a lung. It is usually unilateral. It is a condition where the alveoli are deflated down to little or no volume, as distinct from pulmonary consolidation, in which they are filled with liquid. It is often called a collapsed lung
+</p>
+<p>
+It is a very common finding in chest x-rays and other radiological studies, and may be caused by normal exhalation or by various medical conditions. Although frequently described as a collapse of lung tissue, atelectasis is not synonymous with a pneumothorax, which is a more specific condition that features atelectasis. Acute atelectasis may occur as a post-operative complication or as a result of surfactant deficiency. In premature babies, this leads to infant respiratory distress syndrome. 
+</p>
+</h2>
+{% endif %}
+
+{% if name == 'Proliferative DR' %}
+<h2><p>
+No DR is the collapse or closure of a lung resulting in reduced or absent gas exchange. It may affect part or all of a lung. It is usually unilateral. It is a condition where the alveoli are deflated down to little or no volume, as distinct from pulmonary consolidation, in which they are filled with liquid. It is often called a collapsed lung
+</p>
+<p>
+It is a very common finding in chest x-rays and other radiological studies, and may be caused by normal exhalation or by various medical conditions. Although frequently described as a collapse of lung tissue, atelectasis is not synonymous with a pneumothorax, which is a more specific condition that features atelectasis. Acute atelectasis may occur as a post-operative complication or as a result of surfactant deficiency. In premature babies, this leads to infant respiratory distress syndrome. 
+</p>
+</h2>
+{% endif %}
+</div>
+		<!-- Footer -->
+			<footer>
+				<div class="inner">
+
+					<h3>Get in touch</h3>
+
+					<form action="#" method="post">
+
+						<div class="field half first">
+							<label for="name">Name</label>
+							<input name="name" id="name" type="text" placeholder="Name">
+						</div>
+						<div class="field half">
+							<label for="email">Email</label>
+							<input name="email" id="email" type="email" placeholder="Email">
+						</div>
+						<div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
+						</div>
+						<ul class="actions">
+							<li><input value="Send Message" class="button alt" type="submit"></li>
+						</ul>
+					</form>
+				</div>
+			</footer>
+		
+
+	</body>
+</html>
